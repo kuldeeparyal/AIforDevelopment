@@ -1,0 +1,88 @@
+{
+  "title": "Enhanced Analysis - Structured Problem Development Workflow",
+  "description": "Demonstrates the structured problem statement development process adapted from customer problem templates for nonprofits",
+  
+  "step_1_problem_structuring_start": {
+    "endpoint": "/problem/structure/start",
+    "method": "POST", 
+    "request": {
+      "initial_challenge": "Our food pantry has coordination issues"
+    },
+    "expected_response": {
+      "structuring_id": "S4F8B2A19",
+      "current_step": 1,
+      "total_steps": 5,
+      "step_name": "Organization Context",
+      "question": "Let's start by understanding your organization. Can you describe who you are - what type of organization, how many people you serve, and what your primary mission is?",
+      "guidance": "Think about your organization's identity, size, and core purpose. This helps us understand the context for your coordination challenges."
+    }
+  },
+
+  "step_2_continue_structuring": {
+    "endpoint": "/problem/structure/continue",
+    "method": "POST",
+    "request": {
+      "structuring_id": "S4F8B2A19", 
+      "response": "We are a community food pantry that serves 400 low-income families each month through our main distribution center and 2 satellite locations. Our mission is to ensure no family in our community goes hungry while maintaining dignity and respect in our food distribution process."
+    },
+    "expected_response": {
+      "structuring_id": "S4F8B2A19",
+      "current_step": 2,
+      "total_steps": 5,
+      "step_name": "Goals and Aspirations",
+      "question": "What are you specifically trying to achieve or improve in your food distribution operations? What would success look like for your coordination efforts?",
+      "guidance": "Focus on your desired outcomes and what you're working toward with your coordination systems."
+    }
+  },
+
+  "step_3_complete_structuring": {
+    "endpoint": "/problem/structure/complete",
+    "method": "POST",
+    "request": {
+      "structuring_id": "S4F8B2A19"
+    },
+    "expected_response": {
+      "structured_problem_statement": {
+        "we_are": "a community food pantry serving 400 low-income families monthly through our main distribution center and 2 satellite locations with a mission to ensure no family goes hungry while maintaining dignity",
+        "we_are_trying_to": "coordinate efficient food distribution across all locations while maintaining accurate inventory tracking and ensuring families receive consistent, respectful service",
+        "but": "our current coordination relies on phone calls and paper forms, leading to inventory mismatches between sites and families sometimes waiting or being turned away",
+        "because": "we lack real-time communication systems and integrated inventory management across our three locations",
+        "which_makes_us_feel": "frustrated that we cannot serve families as effectively as our mission demands and worried that poor coordination undermines the dignity we strive to maintain"
+      },
+      "recommended_next_step": "enhanced_analysis",
+      "analysis_readiness": "high"
+    }
+  },
+
+  "step_4_enhanced_analysis_with_structure": {
+    "endpoint": "/analyze/interactive",
+    "method": "POST",
+    "request": {
+      "problem_statement": "Our food pantry has coordination issues across our 3 locations leading to inventory problems and service inconsistencies",
+      "organization_name": "Riverside Community Food Pantry", 
+      "geographic_location": "Sacramento, California, USA",
+      "structured_problem_statement": {
+        "we_are": "a community food pantry serving 400 low-income families monthly through our main distribution center and 2 satellite locations with a mission to ensure no family goes hungry while maintaining dignity",
+        "we_are_trying_to": "coordinate efficient food distribution across all locations while maintaining accurate inventory tracking and ensuring families receive consistent, respectful service", 
+        "but": "our current coordination relies on phone calls and paper forms, leading to inventory mismatches between sites and families sometimes waiting or being turned away",
+        "because": "we lack real-time communication systems and integrated inventory management across our three locations",
+        "which_makes_us_feel": "frustrated that we cannot serve families as effectively as our mission demands and worried that poor coordination undermines the dignity we strive to maintain"
+      }
+    },
+    "expected_response": {
+      "problem_id": "I7C9E3F21",
+      "question": "Riverside Community Food Pantry, given your commitment to maintaining dignity in food distribution and your concern about families being turned away, what specific situations have occurred in the past month where inventory mismatches between your three locations directly impacted a family's ability to receive food, and how did you handle these situations?",
+      "reasoning": "This question builds on their structured awareness about dignity and coordination issues while seeking concrete examples of how inventory problems affect their mission delivery. Understanding specific incidents helps prioritize which coordination gaps are most critical to address.",
+      "question_number": 1,
+      "total_questions": 7,
+      "confidence_level": "low"
+    }
+  },
+
+  "workflow_benefits": {
+    "structured_development": "Guides nonprofits through systematic problem articulation using the customer problem template adapted for nonprofit contexts",
+    "enhanced_questioning": "AI uses structured insights to ask more targeted questions that build on their self-awareness",
+    "mission_alignment": "Keeps focus on nonprofit mission and values throughout the analysis process",
+    "systematic_approach": "5-step process ensures comprehensive problem understanding before solution design"
+  }
+}
