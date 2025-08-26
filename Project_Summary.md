@@ -103,6 +103,7 @@ task_2_readiness_survey/
 ---
 
 ## Ethics & Governance (Both Projects)
+- **Design:** Ethical considerations are made in both the assessment and the use case architecture design.
 - **Transparency:** Clear disclosure when AI is used and how outputs are generated.
 - **Data Minimization:** Collect only what’s needed; avoid sensitive PII.
 - **Bias Awareness:** Prompts emphasize affordable, context‑appropriate options; geographic grounding to reduce one‑size‑fits‑all bias.
