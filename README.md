@@ -108,8 +108,7 @@ npm run dev
 3. Submit a PR with a brief description and screenshots or sample outputs where relevant.
 
 ## License
-- **Task 1:** MIT (as documented in the task directory).  
-- **Task 2:** Educational / non‑profit use (see task directory).
+- **Task 1 and Task 2:** MIT (as documented in the task directory).  
 
 ---
 
