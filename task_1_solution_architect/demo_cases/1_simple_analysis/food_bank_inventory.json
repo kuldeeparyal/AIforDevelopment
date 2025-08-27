@@ -1,0 +1,57 @@
+{
+  "title": "Simple Analysis - Food Bank Inventory Management",
+  "description": "Real API demonstration of the basic /analyze → /recommend workflow",
+  
+  "step_1_analyze": {
+    "endpoint": "/analyze",
+    "method": "POST",
+    "request": {
+      "problem_statement": "Our food bank needs help with inventory management"
+    },
+    "real_api_response": {
+      "problem_id": "P879FF680",
+      "description": "The core operational challenge is the lack of an efficient system to track and manage food inventory, leading to potential waste, shortages, or overstocking.",
+      "clarifying_questions": [
+        "What current system or process is being used for inventory management?",
+        "Are there specific issues with tracking perishable versus non-perishable items?"
+      ]
+    }
+  },
+
+  "step_2_recommend": {
+    "endpoint": "/recommend",
+    "method": "POST", 
+    "request": {
+      "problem_id": "P879FF680",
+      "description": "The core operational challenge is the lack of an efficient system to track and manage food inventory, leading to potential waste, shortages, or overstocking.",
+      "clarifying_questions": [
+        "We currently use paper logs and spreadsheets",
+        "We have major issues with perishable items expiring before distribution"
+      ]
+    },
+    "real_api_response": {
+      "solution_summary": "Implement a digital inventory management system utilizing cost-effective SaaS solutions to automate and streamline food tracking. This will reduce waste and improve efficiency while ensuring items are distributed before expiration.",
+      "recommended_tech_stack": [
+        "Odoo Community Edition Inventory Module",
+        "Google Sheets integration for real-time data visibility",
+        "Barcode scanning system using mobile devices", 
+        "Zapier for automating routine tasks",
+        "Perma.cc for creating permanent web-accessible links to inventory how-to tutorials"
+      ],
+      "initial_steps": [
+        "Evaluate and select a dedicated resource to manage the transition from paper logs to digital systems.",
+        "Set up and customize the Odoo Inventory Module to meet specific tracking needs for perishable items.",
+        "Train staff and volunteers on using mobile devices for barcode scanning to streamline inventory intake and management tasks.",
+        "Establish Google Sheets integration for easy inventory data access and sharing across teams.",
+        "Develop a process for regularly reviewing and adjusting inventory practices based on real-time data for maintaining optimal stock levels."
+      ]
+    }
+  },
+
+  "api_notes": {
+    "workflow": "Simple two-step process: analyze problem → get recommendations",
+    "input_format": "Single problem_statement field for /analyze",
+    "output_format": "Clean JSON with problem_id, description, clarifying_questions, then solution_summary, tech_stack, initial_steps",
+    "use_case": "Quick operational analysis and practical technology recommendations"
+  }
+}
