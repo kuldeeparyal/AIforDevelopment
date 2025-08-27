@@ -3,9 +3,10 @@
 This repository contains **two complementary projects** that help nonprofits move from **readiness → action** in their AI and digital transformation journey.
 
 - **Task 1 — AI Architect for Nonprofit Solutions (Flask API)**  
-  An AI-powered API that analyzes a nonprofit’s problem statement and generates **context-aware** recommendations with practical first steps.
+  An AI-powered API that analyses a nonprofit’s problem statement and generates **context-aware** recommendations with practical first steps.
 - **Task 2 — AI & Digital Transformation Readiness Assessment (Full‑stack Web App)**  
-  A self‑assessment that measures organizational readiness across six dimensions and produces **AI‑generated** insights and prioritized recommendations.
+A self-assessment that measures organisational readiness across six survey categories 
+(consolidated into five scoring dimensions) and produces AI-generated insights
 
 > For a narrative comparison of both projects, see **[Project_Summary.md](./Project_Summary.md)**.
 
@@ -85,8 +86,8 @@ npm run dev
 - `GET /api/survey-config` — survey metadata
 - `POST /api/assessments` — submit responses
 - `GET /api/assessments/:id` — fetch results
-- `GET /api/assessments/:id/report` — generate detailed report
-
+- `GET /api/assessments/:id/report` — export assessment as Markdown
+  
 > Methodology and scoring: **task_2_readiness_survey/FRAMEWORK.md**  
 > Sample output: **task_2_readiness_survey/example_reports/sample_assessment_report.md**
 
