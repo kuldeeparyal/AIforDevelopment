@@ -112,4 +112,4 @@ npm run dev
 
 ---
 
-**Questions?** See the task‑level READMEs or open an issue. For a concise, side‑by‑side view tailored to evaluators, download the **Concise Summary (2‑page)** provided separately.
+**Questions?** See the task‑level READMEs or open an issue. For a concise, side‑by‑side view tailored to evaluators, download the **Concise Summary** provided separately.
