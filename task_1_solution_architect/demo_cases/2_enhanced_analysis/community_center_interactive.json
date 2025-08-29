@@ -1,0 +1,84 @@
+{
+  "title": "Enhanced Analysis - Community Center Interactive Questioning",
+  "description": "Real API demonstration of enhanced analysis with structured problem statement and organization context",
+  
+  "step_1_interactive_start": {
+    "endpoint": "/analyze/interactive",
+    "method": "POST",
+    "request": {
+      "problem_statement": "Our organization struggles with donor communication and volunteer management",
+      "organization_name": "Portland Community Center",
+      "geographic_location": "Portland, Oregon, USA",
+      "structured_problem_statement": {
+        "we_are": "a community center serving 500 families monthly",
+        "we_are_trying_to": "maintain strong donor relationships while coordinating 40+ volunteers",
+        "but": "our communication is inconsistent and volunteer scheduling conflicts",
+        "because": "we lack integrated systems connecting donor management and volunteer coordination",
+        "which_makes_us_feel": "frustrated that we are missing opportunities to maximize our impact"
+      }
+    },
+    "real_api_response": {
+      "problem_id": "IPCCF3CA48",
+      "question": "What specific organizational processes or workflows are currently being hindered by your lack of integrated systems, and how have these impacted your donor retention rates or volunteer engagement levels over the past year?",
+      "reasoning": "This question aims to identify the specific operational pain points that are causing issues with donor and volunteer management. By understanding which processes are most affected, we can better recommend technology solutions that address these roadblocks. Moreover, examining the impact on donor retention and volunteer engagement provides insight into the severity of the problem and helps prioritize which aspects of the system integration should be tackled first, aligning closely with their mission to maximize community impact.",
+      "question_number": 1,
+      "total_questions": 7,
+      "confidence_level": "low"
+    }
+  },
+
+  "step_2_continue_questioning": {
+    "endpoint": "/analyze/interactive/continue",
+    "method": "POST",
+    "request": {
+      "problem_id": "IPCCF3CA48",
+      "answer": "Our donor thank-you process takes 2-3 weeks because we manually track donations in spreadsheets, then create individual letters. We've lost 15% of our donors this year. For volunteers, we have scheduling conflicts every week because people sign up through different channels - email, phone calls, and a paper calendar at our front desk. Three volunteers quit last month citing frustration with poor communication."
+    },
+    "expected_response": {
+      "problem_id": "IPCCF3CA48",
+      "question": "Given Portland's robust nonprofit technology ecosystem and your current donor retention challenges, what is your annual donor communication budget, and are there any board-level or regulatory requirements that influence how you can implement new donor management systems?",
+      "reasoning": "Understanding their budget constraints and any regulatory requirements is crucial for recommending appropriate solutions. Portland has many nonprofit tech resources, so we need to know what they can invest and any compliance factors that might limit technology choices.",
+      "question_number": 2,
+      "total_questions": 7,
+      "confidence_level": "medium"
+    }
+  },
+
+  "step_3_complete_analysis": {
+    "endpoint": "/analyze/interactive/complete",
+    "method": "POST",
+    "request": {
+      "problem_id": "IPCCF3CA48"
+    },
+    "expected_response": {
+      "solution_summary": "Implement integrated nonprofit management platform combining donor CRM with volunteer coordination, leveraging Portland's nonprofit tech ecosystem and structured around Portland Community Center's specific workflow needs to address the 15% donor loss and volunteer communication issues.",
+      "recommended_tech_stack": [
+        "Little Green Light - Affordable donor CRM with automated thank-you workflows",
+        "VolunteerHub - Volunteer scheduling integrated with donor database",
+        "Mailchimp for Nonprofits - Automated donor communication sequences",
+        "Zapier - Integration between all systems for seamless data flow"
+      ],
+      "initial_steps": [
+        "Conduct donor data audit and migration planning from current spreadsheets",
+        "Set up Little Green Light with automated thank-you letter templates",
+        "Implement VolunteerHub with single sign-up system replacing multiple channels",
+        "Train staff on integrated workflow and establish new communication protocols"
+      ],
+      "total_questions_asked": 3,
+      "confidence_level": "high"
+    }
+  },
+
+  "key_features": {
+    "organization_context": "Questions reference 'Portland Community Center' and Portland's nonprofit ecosystem",
+    "structured_problem_awareness": "AI builds on their self-identified challenges from the structured statement",
+    "strategic_questioning": "Focuses on impact metrics (15% donor loss) and root causes",
+    "location_specific": "Incorporates Portland's nonprofit technology resources and regulations",
+    "emotional_validation": "Acknowledges their frustration about missing impact opportunities"
+  },
+
+  "comparison_to_simple": {
+    "simple_analysis": "Would ask generic questions about donor management systems",
+    "enhanced_analysis": "Asks specifically about Portland Community Center's donor retention rates and regulatory requirements given their Portland location and structured problem awareness"
+  }
+}

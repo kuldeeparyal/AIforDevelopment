@@ -1,0 +1,49 @@
+{
+  "title": "Simple Analysis - Animal Shelter Management",
+  "description": "Real API demonstration showing when clarifying_questions is empty (clear problem)",
+  
+  "step_1_analyze": {
+    "endpoint": "/analyze",
+    "method": "POST",
+    "request": {
+      "problem_statement": "Our community animal shelter with 50 volunteers and 300 animals needs better adoption tracking and volunteer coordination. We process 200+ adoptions yearly but manage everything through spreadsheets and WhatsApp groups, leading to missed follow-ups and volunteer conflicts."
+    },
+    "real_api_response": {
+      "problem_id": "P87507EA3",
+      "description": "The core operational challenge is the lack of an integrated system for managing adoption tracking and volunteer coordination, leading to inefficiencies and communication issues. Key technical gaps include the absence of a centralized database and communication platform to streamline operations and reduce reliance on spreadsheets and WhatsApp.",
+      "clarifying_questions": []
+    }
+  },
+
+  "step_2_recommend": {
+    "endpoint": "/recommend",
+    "method": "POST",
+    "request": {
+      "problem_id": "P87507EA3", 
+      "description": "The core operational challenge is the lack of an integrated system for managing adoption tracking and volunteer coordination, leading to inefficiencies and communication issues. Key technical gaps include the absence of a centralized database and communication platform to streamline operations and reduce reliance on spreadsheets and WhatsApp.",
+      "clarifying_questions": []
+    },
+    "expected_response": {
+      "solution_summary": "Implement integrated animal shelter management system with centralized adoption tracking and volunteer coordination to replace spreadsheets and WhatsApp groups with professional-grade tools.",
+      "recommended_tech_stack": [
+        "ShelterLuv or RescueGroups - Comprehensive shelter management software with adoption tracking",
+        "VolunteerHub - Volunteer scheduling and coordination platform",
+        "Slack or Microsoft Teams - Professional team communication replacing WhatsApp",
+        "Google Workspace for Nonprofits - Document management and collaboration tools"
+      ],
+      "initial_steps": [
+        "Research and select shelter management software that includes adoption tracking features",
+        "Set up volunteer management system with role-based access and scheduling",
+        "Migrate adoption data from spreadsheets to the new centralized system",
+        "Train staff and volunteers on the new platforms and establish communication protocols"
+      ]
+    }
+  },
+
+  "key_features": {
+    "detailed_problem_statement": "Provides comprehensive context including scale (50 volunteers, 300 animals, 200+ adoptions)",
+    "empty_clarifying_questions": "Demonstrates when AI determines problem is clearly understood",
+    "specific_pain_points": "Identifies exact issues (missed follow-ups, volunteer conflicts)",
+    "clear_solution_path": "Well-defined problem leads to targeted technology recommendations"
+  }
+}

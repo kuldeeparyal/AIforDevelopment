@@ -1,0 +1,57 @@
+{
+  "title": "Enhanced Analysis - Ethical Considerations Integration",
+  "description": "Example showing how ethical considerations are integrated into enhanced analysis recommendations",
+
+  "sample_ethical_considerations_output": {
+    "data_privacy_measures": [
+      "Implement role-based access controls to limit volunteer access to sensitive donor information",
+      "Ensure all cloud storage solutions are GDPR and HIPAA compliant for client data protection",
+      "Establish data retention policies that automatically purge outdated personal information"
+    ],
+    "accessibility_requirements": [
+      "Choose volunteer management platform with screen reader compatibility and keyboard navigation",
+      "Ensure mobile app has high contrast options and text scaling for visually impaired users",
+      "Provide multilingual support for volunteer interface to serve diverse community"
+    ],
+    "vendor_ethics": [
+      "Prioritize technology vendors with B-Corp certification or demonstrated social responsibility",
+      "Avoid platforms with history of data misuse or exploitation of user information",
+      "Select vendors that offer nonprofit pricing and actively support community organizations"
+    ],
+    "transparency_guidelines": [
+      "Document all technology decision criteria and share with board for oversight",
+      "Create volunteer communication plan explaining why new systems are being implemented",
+      "Establish clear policies for how volunteer data will be used and protected"
+    ]
+  },
+
+  "ethical_framework_categories": {
+    "data_protection": {
+      "focus": "Donor, client, and volunteer information security",
+      "considerations": ["GDPR compliance", "Data minimization", "Consent management", "Breach response"]
+    },
+    "digital_equity": {
+      "focus": "Inclusive technology that serves diverse populations",
+      "considerations": ["Accessibility standards", "Language barriers", "Economic access", "Cultural sensitivity"]
+    },
+    "vendor_responsibility": {
+      "focus": "Choosing ethically responsible technology partners",
+      "considerations": ["Corporate social responsibility", "Labor practices", "Environmental impact", "Community support"]
+    },
+    "organizational_transparency": {
+      "focus": "Accountable technology decision-making",
+      "considerations": ["Board oversight", "Stakeholder communication", "Decision documentation", "Impact measurement"]
+    },
+    "mission_alignment": {
+      "focus": "Technology choices that support nonprofit values",
+      "considerations": ["Beneficiary-centered design", "Value alignment", "Long-term sustainability", "Community impact"]
+    }
+  },
+
+  "integration_with_recommendations": {
+    "how_it_works": "Ethical considerations are generated alongside technical recommendations",
+    "ai_prompt_integration": "AI is specifically instructed to evaluate ethical implications of all technology choices",
+    "output_structure": "Appears as dedicated 'ethical_considerations' array in enhanced analysis final output",
+    "practical_application": "Provides actionable guidance nonprofits can implement during technology adoption"
+  }
+}
